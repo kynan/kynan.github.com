@@ -1,12 +1,12 @@
-markdown: rdiscount
+markdown: redcarpet
 pygments: true
-permalink: /posts/:title
+permalink: /posts/:year-:month-:day-:title
 rdiscount:
   extensions: [smart]
 
-name: Zach Holman
-url: http://zachholman.com
-description: A fantastic blog that is fantastic.
-twitter: holman
-github: holman
-gravatar_url: http://gravatar.com/avatar/6f63cde8b16b035280ca615f621a6c8c
+name: Florian Rathgeber
+url: http://florianrathgeber.me
+description: Computational scientist at Imperial College, London. Pythonista. Open source / open data enthusiast, developer, contributor. Hobbyist photographer.
+twitter: frathgeber
+github: kynan
+gravatar_url: http://gravatar.com/avatar/d178a6201be696c466c41c355c671707
