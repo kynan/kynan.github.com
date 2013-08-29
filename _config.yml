@@ -6,8 +6,10 @@ rdiscount:
 
 name: Florian Rathgeber
 url: http://florianrathgeber.me
+domain: florianrathgeber.me
 description: Computational scientist at Imperial College, London. Pythonista. Open source / open data enthusiast, developer, contributor. Hobbyist photographer.
 twitter: frathgeber
 github: kynan
 googleplus: 112983298713989864872
 gravatar_url: http://gravatar.com/avatar/d178a6201be696c466c41c355c671707
+analytics_id: UA-42283836-1
