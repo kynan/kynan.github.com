@@ -106,9 +106,9 @@ a {
     margin-bottom: 10px; }
   .content p {
     font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 1.2em;
-    line-height: 1.7em; }
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    line-height: 1.25em; }
     .content p code {
       font-size: 12px;
       background-color: #eeeeee;
