@@ -1,0 +1,134 @@
+
+@inproceedings{rathgeber_pyop2:_2012,
+	title = {{PyOP}2: A High-Level Framework for Performance-Portable Simulations on Unstructured Meshes},
+	isbn = {978-1-4673-6218-4},
+	shorttitle = {{PyOP}2},
+  url = {http://dx.doi.org/10.1109/SC.Companion.2012.134},
+	doi = {10.1109/SC.Companion.2012.134},
+	abstract = {Emerging many-core platforms are very difficult to program in a performance portable manner whilst achieving high efficiency on a diverse range of architectures. We present work in progress on {PyOP}2, a high-level embedded domain-specific language for mesh-based simulation codes that executes numerical kernels in parallel over unstructured meshes. Just-in-time kernel compilation and parallel scheduling are delayed until runtime, when problem-specific parameters are available. Using generative metaprogramming, performance portability is achieved, while details of the parallel implementation are abstracted from the programmer. {PyOP}2 kernels for finite element computations can be generated automatically from equations given in the domain-specific Unified Form Language. Interfacing to the multi-phase {CFD} code Fluidity through a very thin layer on top of {PyOP}2 yields a general purpose finite element solver with an input notation very close to mathematical formulae. Preliminary performance figures show speedups of up to 3.4x compared to Fluidity's built-in solvers when running in parallel.},
+	booktitle = {High Performance Computing, Networking, Storage and Analysis ({SCC}), 2012 {SC} Companion:},
+	author = {Rathgeber, Florian and Markall, Graham R. and Mitchell, Lawrence and Loriant, Nicolas and Ham, David A. and Bertolli, Carlo and Kelly, Paul H.J.},
+	year = {2012},
+	pages = {1116--1123},
+}
+
+@inproceedings{sturmer_performance_2011,
+	address = {San Antonio, Texas},
+	title = {Performance Engineering of an Orthogonal Matching Pursuit Algorithm for Sparse Representation of Signals on Different Architectures},
+	isbn = {978-3-86644-626-7},
+	url = {http://digbib.ubka.uni-karlsruhe.de/volltexte/1000021732},
+	doi = {10.5445/KSP/1000021732},
+	abstract = {Modern multicore architectures require adapted, parallel algorithms and implementation strategies for many applications. As a non-trivial example we chose in this paper a patch-based sparse coding algorithm called Orthogonal Matching Pursuit ({OMP}) and discuss parallelization and implementation strategies on current hardware. The {OMP} algorithm is used in imaging and involves heavy computations on many small blocks of pixels called patches. From a global view the patches within the image can be processed completely in parallel but within one patch the algorithm is hard to parallelize. We compare the performance on the Cell Broadband Engine Architecture ({CBEA}), different {GPUs}, and current multicore {CPUs}.},
+	booktitle = {High-performance and Hardware-aware Computing: proceedings of the second International Workshop on New Frontiers in High-performance and Hardware-aware Computing ({HipHaC}'11), San Antonio, Texas},
+	publisher = {{KIT} Scientific Publishing},
+	author = {Stürmer, Markus and Rathgeber, Florian and Köstler, Harald},
+	editor = {Buchty, R. and Weiß, J.-P.},
+	month = feb,
+	year = {2011},
+	pages = {17 -- 24},
+}
+
+@article{luporini_cross-loop_2015,
+	title = {Cross-Loop Optimization of Arithmetic Intensity for Finite Element Local Assembly},
+	volume = {11},
+	issn = {1544-3566},
+	url = {http://doi.acm.org/10.1145/2687415},
+	doi = {10.1145/2687415},
+	number = {4},
+	urldate = {2015-01-13},
+	journal = {{ACM} Trans. Archit. Code Optim.},
+	author = {Luporini, Fabio and Varbanescu, Ana Lucia and Rathgeber, Florian and Bercea, Gheorghe-Teodor and Ramanujam, J. and Ham, David A. and Kelly, Paul H. J.},
+	month = jan,
+	year = {2015},
+	pages = {57:1--57:25},
+}
+
+@inproceedings{markall_performance-portable_2013,
+	address = {Leipzig, Germany},
+	series = {Lecture Notes in Computer Science},
+	title = {Performance-Portable Finite Element Assembly Using {PyOP}2 and {FEniCS}},
+	copyright = {©2013 Springer-Verlag Berlin Heidelberg},
+	isbn = {978-3-642-38749-4, 978-3-642-38750-0},
+	url = {http://link.springer.com/chapter/10.1007/978-3-642-38750-0_21},
+	doi = {10.1007/978-3-642-38750-0_21},
+	abstract = {We describe a toolchain that provides a fully automated compilation pathway from a finite element domain-specific language to low-level code for multicore and {GPGPU} platforms. We demonstrate that the generated code exceeds the performance of the best available alternatives, without requiring manual tuning or modification of the generated code. The toolchain can easily be integrated with existing finite element solvers, providing a means to add performance portable methods without having to rebuild an entire complex implementation from scratch.},
+	urldate = {2013-06-25},
+	booktitle = {28th International Supercomputing Conference, {ISC} 2013, Leipzig, Germany, June 16-20, 2013},
+	publisher = {Springer Berlin Heidelberg},
+	author = {Markall, Graham R. and Rathgeber, Florian and Mitchell, Lawrence and Loriant, Nicolas and Bertolli, Carlo and Ham, David A. and Kelly, Paul H. J.},
+	editor = {Kunkel, Julian Martin and Ludwig, Thomas and Meuer, Hans Werner},
+	month = jun,
+	year = {2013},
+	pages = {279--289},
+}
+
+@phdthesis{rathgeber_productive_2014,
+	address = {London, {UK}},
+	type = {{PhD} thesis},
+	title = {Productive and Efficient Computational Science Through Domain-specific Abstractions},
+	url = {http://hdl.handle.net/10044/1/18911},
+	abstract = {In an ideal world, scientific applications are computationally efficient, maintainable and composable and allow scientists to work very productively. We argue that these goals are achievable for a specific application field by choosing suitable domain-specific abstractions that encapsulate domain knowledge with a high degree of expressiveness.
+
+This thesis demonstrates the design and composition of domain-specific abstractions by abstracting the stages a scientist goes through in formulating a problem of numerically solving a partial differential equation. Domain knowledge is used to transform this problem into a different, lower level representation and decompose it into parts which can be solved using existing tools. A system for the portable solution of partial differential equations using the finite element method on unstructured meshes is formulated, in which contributions from different scientific communities are composed to solve sophisticated problems.
+
+The concrete implementations of these domain-specific abstractions are Firedrake and {PyOP}2. Firedrake allows scientists to describe variational forms and discretisations for linear and non-linear finite element problems symbolically, in a notation very close to their mathematical models.  {PyOP}2 abstracts the performance-portable parallel execution of local computations over the mesh on a range of hardware architectures, targeting multi-core {CPUs}, {GPUs} and accelerators. Thereby, a separation of concerns is achieved, in which Firedrake encapsulates domain knowledge about the finite element method separately from its efficient parallel execution in {PyOP}2, which in turn is completely agnostic to the higher abstraction layer.
+
+As a consequence of the composability of those abstractions, optimised implementations for different hardware architectures can be automatically generated without any changes to a single high-level source. Performance matches or exceeds what is realistically attainable by hand-written code. Firedrake and {PyOP}2 are combined to form a tool chain that is demonstrated to be competitive with or faster than available alternatives on a wide range of different finite element problems.},
+	school = {Imperial College},
+	author = {Rathgeber, Florian},
+	month = oct,
+	year = {2014},
+}
+
+@mastersthesis{rathgeber_simulation_2009,
+	address = {Erlangen, Germany},
+	type = {{BSc} thesis},
+	title = {Simulation and Visualization of Fire with the Lattice-Boltzmann Method},
+	url = {https://www10.informatik.uni-erlangen.de/Publications/Theses/2009/Rathgeber_BA09.pdf},
+	school = {Friedrich-Alexander-Universität Erlangen-Nürnberg},
+	author = {Rathgeber, Florian},
+	month = may,
+	year = {2009},
+	note = {Published: Bachelor Thesis
+Betr. Iglberger},
+}
+
+@mastersthesis{rathgeber_automated_2010,
+	address = {Stockholm, Sweden},
+	type = {{MSc} thesis},
+	title = {Automated Finite Element Computations in the {FEniCS} Framework using General Purpose Graphics Processing Units},
+	url = {http://www.nada.kth.se/utbildning/grukth/exjobb/rapportlistor/2010/rapporter10/rathgeber_florian_10106.pdf},
+	abstract = {Graphics Processing Units ({GPUs}) are established as a computational hardware platform superior in price/performance compared to general {CPUs}, but typically require specialized implementations and expert low-level knowledge. In this thesis the {FEniCS} framework for automated finite element solution of partial differential equations is extended to automatically generate {GPU} implementations, and achieve the expected speedup without sacrificing generality. An implementation using {NVIDIAs} Compute Unified Device Architecture ({CUDA}) of general finite element assembly and a conjugate gradient ({CG}) solver for the linear system of equations are presented for the {DOLFIN} problem solving environment. Extending the {FEniCS} form compiler {FFC} to generate specific {CUDA} kernels for assembly from a mathematical notation of the variational form retains the flexibility and degree of automation which is the basis of {FEniCS}. A matrix-free method, computing the matrix-vector product Ax in the {CG} iteration without assembling the matrix A, is evaluated against the assembly method, and is shown to perform better for a class of problems. Benchmarking and profiling variational forms with different characteristics on a workstation show a significant speedup on the {NVIDIA} Tesla architecture of up to a factor 9 over the serial {CPU} implementation and reveal bottlenecks of both the {CPU} and {GPU} codes.
+
+Furthermore, a prototype implementation of computational steering for the {FEniCS} application Unicorn is presented, allowing to interactively change parameters of a running simulation and getting visual feedback in close to real time, presenting a possible application for {GPU} acceleration.},
+	urldate = {2013-09-01},
+	school = {Royal Institute of Technology ({KTH})},
+	author = {Rathgeber, Florian},
+	month = sep,
+	year = {2010},
+}
+
+@inproceedings{tohid_effective_2015,
+	address = {Amsterdam, The Netherlands},
+	title = {Effective Resource-Driven Loop Splitting for Large Unstructured Mesh Applications on {GPUs}},
+	url = {http://www.exastencils.org/histencils/2015/papers/histencils2015_tohid.pdf},
+	booktitle = {Proceedings of the 2nd International Workshop on High-Performance Stencil Computations},
+	author = {Tohid, R. and Luporini, Fabia and Bertolli, Carlo and Reguly, István and Mudalige, Gihan and Betts, Adam and Rathgeber, Florian and Markall, Graham and Ham, David A. and Ramanujam, J. and Giles, Michael B. and Kelly, Paul H.J.},
+	editor = {Grö{\textbackslash}s slinger, Armin and Köstler, Harald},
+	month = jan,
+	year = {2015},
+	pages = {25--32},
+}
+
+@article{rathgeber_firedrake:_2015,
+	title = {Firedrake: automating the finite element method by composing abstractions},
+	shorttitle = {Firedrake},
+	url = {http://arxiv.org/abs/1501.01809},
+	abstract = {Firedrake is a new tool for automating the numerical solution of partial differential equations. Firedrake adopts the domain-specific language for the finite element method of the {FEniCS} project, but with a pure Python runtime-only implementation centred on the composition of several existing and new abstractions for particular aspects of scientific computing. The result is a more complete separation of concerns which eases the incorporation of separate contributions from computer scientists, numerical analysts and application specialists. These contributions may add functionality, or improve performance. Firedrake benefits from automatically applying new optimisations. This includes factorising mixed function spaces, transforming and vectorising inner loops, and intrinsically supporting block matrix operations. Importantly, Firedrake presents a simple public {API} for escaping the {UFL} abstraction. This allows users to implement non--finite-element operations such as flux-limiters.},
+	urldate = {2015-01-13},
+	journal = {{ACM} Transactions on Mathematical Software (submitted)},
+	author = {Rathgeber, Florian and Ham, David A. and Mitchell, Lawrence and Lange, Michael and Luporini, Fabio and McRae, Andrew T. T. and Bercea, Gheorghe-Teodor and Markall, Graham R. and Kelly, Paul H. J.},
+	month = jan,
+	year = {2015},
+	note = {{arXiv}: 1501.01809 [cs, math], submitted},
+}
