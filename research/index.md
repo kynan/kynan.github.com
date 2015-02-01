@@ -1,6 +1,6 @@
 ---
 layout: content
-title: Florian Rathgeber
+title: Research
 ---
 
 ## PhD research
