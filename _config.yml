@@ -4,7 +4,7 @@ permalink: /blog/:year/:month/:day/:title
 rdiscount:
   extensions: [smart]
 
-name: Florian Rathgeber
+name: Florian Rathgeber's site
 url: http://kynan.github.io
 domain: kynan.github.io
 description: Computational scientist at ECMWF, Reading, UK. Pythonista. Open source / open data enthusiast, developer, contributor. Hobbyist photographer.
