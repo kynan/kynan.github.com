@@ -8,7 +8,7 @@ layout: layout
   </h1>
 
   <section class="byline">
-    {{ page.date | date: "%B %e, %Y" }}
+    {{ page.date | date: "%B %e, %Y" }} | by <a href="#about">{{ site.name }}</a>
   </section>
 
   {{ content }}
@@ -22,6 +22,7 @@ layout: layout
         <img src="{{ site.gravatar_url }}?s=142" height="50" width="50" />
       </a>
 
+      <a name="about"><strong>About the author:</strong></a>
       <p>
         {{ site.description | markdownify }}
       </p>
