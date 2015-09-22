@@ -1,9 +1,9 @@
 ---
-layout: content
+layout: page
 title: About me
 ---
 
-> {{ site.description }}
+> {{ site.description | markdownify }}
 
 I have several years of experience designing and developing scientific
 software with a focus on solving differential equations and finite-element

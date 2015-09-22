@@ -1,21 +1,31 @@
-markdown: redcarpet
-pygments: true
-permalink: /blog/:year/:month/:day/:title
-rdiscount:
-  extensions: [smart]
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           blog/:year/:month/:day/:title
+relative_permalinks: true
 
-gems:
-  - jekyll-sitemap
+# Setup
+title:               Not sorry for the inconvenience
+tagline:
+description:         Computational scientist at [ECMWF](http://ecmwf.int) in Reading, UK. Pythonista. Cyclist. Open source / open data enthusiast. Hobbyist photographer. [PyData London](http://london.pydata.org) co-organiser. [Taarifa](http://taarifa.org) co-Founder.
+url:                 https://kynan.github.io
+domain:              kynan.github.io
+baseurl:             ''
+paginate:            5
 
-name: Florian Rathgeber
-title: Florian Rathgeber's site
-url: http://kynan.github.io
-domain: kynan.github.io
-description: Computational scientist at [ECMWF](http://ecmwf.int) in Reading, UK. Pythonista. Cyclist. Open source / open data enthusiast. Hobbyist photographer. [PyData London](http://london.pydata.org) co-organiser. [Taarifa](http://taarifa.org) co-Founder.
+# About/contact
+author:
+  name:              Florian Rathgeber
+  url:               https://twitter.com/frathgeber
+  email:             florian.rathgeber@gmail.com
+
+# Social
 twitter: frathgeber
 github: kynan
 googleplus: +FlorianRathgeber
 flickr: frathgeber
 gravatar_url: https://gravatar.com/avatar/d178a6201be696c466c41c355c671707
-analytics_id: UA-42283836-1
 disqus_shortname: frathgeber
+
+# Analytics
+analytics_id: UA-42283836-1
