@@ -15,29 +15,27 @@ Thankfully vim makes profiling the startup time really convenient by providing
 a `--startuptime` flag to write timings for loading your `.vimrc` and plugins
 to a file, which looks something like this:
 
-```
-times in msec
- clock   self+sourced   self:  sourced script
- clock   elapsed:              other lines
+    times in msec
+     clock   self+sourced   self:  sourced script
+     clock   elapsed:              other lines
 
-000.007  000.007: --- VIM STARTING ---
-002.399  002.392: Allocated generic buffers
-002.468  000.069: locale set
-004.946  002.478: GUI prepared
-004.954  000.008: clipboard setup
-004.967  000.013: window checked
-016.181  011.214: inits 1
-016.187  000.006: parsing arguments
-016.188  000.001: expanding arguments
-016.212  000.024: shell init
-017.230  001.018: Termcap init
-018.203  000.973: inits 2
-018.390  000.187: init highlight
-022.090  002.745  002.745: sourcing /usr/share/vim/vim74/debian.vim
-026.679  000.296  000.296: sourcing /usr/share/vim/vim74/syntax/syncolor.vim
-026.805  001.004  000.708: sourcing /usr/share/vim/vim74/syntax/synload.vim
-...
-```
+    000.007  000.007: --- VIM STARTING ---
+    002.399  002.392: Allocated generic buffers
+    002.468  000.069: locale set
+    004.946  002.478: GUI prepared
+    004.954  000.008: clipboard setup
+    004.967  000.013: window checked
+    016.181  011.214: inits 1
+    016.187  000.006: parsing arguments
+    016.188  000.001: expanding arguments
+    016.212  000.024: shell init
+    017.230  001.018: Termcap init
+    018.203  000.973: inits 2
+    018.390  000.187: init highlight
+    022.090  002.745  002.745: sourcing /usr/share/vim/vim74/debian.vim
+    026.679  000.296  000.296: sourcing /usr/share/vim/vim74/syntax/syncolor.vim
+    026.805  001.004  000.708: sourcing /usr/share/vim/vim74/syntax/synload.vim
+    ...
 
 The interesting measurements are those concerned with sourcing files, so focus
 your attention on the 3rd column to see where time is spent. Short of trimming
