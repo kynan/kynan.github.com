@@ -359,6 +359,9 @@ a.sidebar-nav-item:focus {
   color: inherit;
 }
 
+.post p {
+  text-align: justify;
+}
 
 /*
  * Pagination
