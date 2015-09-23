@@ -354,8 +354,9 @@ tbody tr:nth-child(odd) th {
 
 /* Related posts */
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  clear: both;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-top: 1px solid #eee;
 }
 .related-posts {
@@ -377,6 +378,25 @@ tbody tr:nth-child(odd) th {
   color: inherit;
 }
 
+/* Meta */
+.meta {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #eee;
+  overflow: auto;
+}
+.copy .avatar {
+  float: left;
+}
+.copy .avatar img {
+  height: 4rem;
+  width: 4rem;
+}
+.copy .description {
+  font-size: .75rem;
+  float: right;
+  max-width: 31rem;
+}
 
 /*
  * Pagination

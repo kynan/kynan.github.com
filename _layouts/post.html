@@ -9,21 +9,19 @@ layout: default
 </div>
 
 <div class="meta">
-  <h3>Discussion, links, and tweets</h3>
   <div id="disqus_thread"></div>
   <div class="copy">
-    <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
+    <a class="avatar" href="https://twitter.com/{{ site.twitter }}" target="_blank">
       <img src="{{ site.gravatar_url }}?s=142" height="50" width="50" />
     </a>
 
-    <a name="about"><strong>About the author:</strong></a>
-    <p>
+    <div class="description">
+      <a name="about"><strong>About the author:</strong></a>
       {{ site.description | markdownify }}
-    </p>
-
-    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-via="{{ site.twitter }}">Tweet</a>
-    <a href="https://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-via="{{ site.twitter }}">Tweet</a>
+      <a href="https://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
   </div>
 </div>
 
