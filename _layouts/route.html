@@ -1,0 +1,70 @@
+---
+layout: post
+---
+
+{{ content }}
+
+<link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/route.css">
+
+<section id="demo" class="gpx" data-gpx-source="{{ site.baseurl }}/public/gpx/{{ page.gpx }}" data-map-target="demo-map">
+  <header>
+    <h3>Loading...</h3>
+    <span class="start"></span>
+  </header>
+
+  <article>
+    <div class="map" id="demo-map"></div>
+  </article>
+
+  <footer>
+    <ul class="info">
+      <li>Distance:&nbsp;<span class="distance"></span>&nbsp;km</li>
+      &mdash; <li>Duration:&nbsp;<span class="duration"></span></li>
+      &mdash; <li>Avg&nbsp;speed:&nbsp;<span class="speed"></span>km/h</li>
+    </ul>
+    <ul class="info">
+      <li>Elevation:&nbsp;+<span class="elevation-gain"></span>&nbsp;m,
+        -<span class="elevation-loss"></span>&nbsp;m
+        (net:&nbsp;<span class="elevation-net"></span>&nbsp;m)</li>
+    </ul>
+  </footer>
+</section>
+
+<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+<script src="https://rawgithub.com/mpetazzoni/leaflet-gpx/master/gpx.js"></script>
+<script type="application/javascript">
+  function display_gpx(elt) {
+    if (!elt) return;
+    var url = elt.getAttribute('data-gpx-source');
+    var mapid = elt.getAttribute('data-map-target');
+    if (!url || !mapid) return;
+    function _t(t) { return elt.getElementsByTagName(t)[0]; }
+    function _c(c) { return elt.getElementsByClassName(c)[0]; }
+    var map = L.map(mapid);
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
+    }).addTo(map);
+    new L.GPX(url, {
+      async: true,
+      marker_options: {
+        startIconUrl: 'https://rawgithub.com/mpetazzoni/leaflet-gpx/master/pin-icon-start.png',
+        endIconUrl:   'https://rawgithub.com/mpetazzoni/leaflet-gpx/master/pin-icon-end.png',
+        shadowUrl:    'https://rawgithub.com/mpetazzoni/leaflet-gpx/master/pin-shadow.png',
+      },
+    }).on('loaded', function(e) {
+      var gpx = e.target;
+      map.fitBounds(gpx.getBounds());
+      _t('h3').textContent = gpx.get_name();
+      _c('start').textContent = gpx.get_start_time().toDateString() + ', '
+        + gpx.get_start_time().toLocaleTimeString();
+      _c('distance').textContent = gpx.m_to_km(gpx.get_distance()).toFixed(2);
+      _c('duration').textContent = gpx.get_duration_string(gpx.get_moving_time());
+      _c('speed').textContent    = gpx.get_moving_speed().toFixed(2);
+      _c('elevation-gain').textContent = gpx.get_elevation_gain().toFixed(0);
+      _c('elevation-loss').textContent = gpx.get_elevation_loss().toFixed(0);
+      _c('elevation-net').textContent  = (gpx.get_elevation_gain() - gpx.get_elevation_loss()).toFixed(0);
+    }).addTo(map);
+  }
+  display_gpx(document.getElementById('demo'));
+</script>
