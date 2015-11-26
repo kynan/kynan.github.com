@@ -1,8 +1,7 @@
 ---
 layout: twitter
-title: Reflections on the Accountability Hack 2015
+title: Analysing Parliamentary Questions Answered at Accountability Hack 2015
 category: posts
-draft: true
 ---
 
 A very frosty November weekend marked the end of [Parliament Week] and the
@@ -99,6 +98,33 @@ classifier for the entire corpus.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;Have all these MPs always been so annoying?!&quot; <a href="https://twitter.com/John_Sandall">@John_Sandall</a> Love it <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a></p>&mdash; RebelUncut (@RebelUncut) <a href="https://twitter.com/RebelUncut/status/668459719363833856">November 22, 2015</a></blockquote>
 
+Later I went on stage again to present [DDPy], a command line interface to
+interact with the Parliament [Linked Data API], which had evolved out of my
+download script to pull the [Parliamentary Questions Answered]. I decided to
+solve this once and for all and, wrote a generic downloader in Python and put
+it on [PyPI]. Now anyone can easily download any data set after a simple
+
+    pip install ddpkuk
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Ok so *now* <a href="https://twitter.com/frathgeber">@frathgeber</a> is going to give us some robust feedback on <a href="https://twitter.com/UKParliData">@ukparlidata</a> <a href="https://twitter.com/hashtag/acchack15?src=hash">#acchack15</a></p>&mdash; Dan Barrett (@dasbarrett) <a href="https://twitter.com/dasbarrett/status/668469540301496322">November 22, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">DDPy from <a href="https://twitter.com/frathgeber">@frathgeber</a> <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> <a href="https://t.co/YeBULBhRrt">https://t.co/YeBULBhRrt</a></p>&mdash; RebelUncut (@RebelUncut) <a href="https://twitter.com/RebelUncut/status/668470085678444544">November 22, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Read how to use DDPy to access <a href="https://twitter.com/UKParliData">@UKParliData</a> <a href="https://twitter.com/hashtag/data?src=hash">#data</a> at <a href="https://t.co/iJTmrdEv89">https://t.co/iJTmrdEv89</a> and get the code on <a href="https://twitter.com/github">@GitHub</a> <a href="https://t.co/ufLZdFP0pk">https://t.co/ufLZdFP0pk</a> <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a></p>&mdash; Florian Rathgeber (@frathgeber) <a href="https://twitter.com/frathgeber/status/668473642708246528">November 22, 2015</a></blockquote>
+
+The judges apparently came away quite impressed with both our presentations
+since we received an honourable mention for the "Best Analysis of Parliamentary
+Data" for [Any Questions Answered?][insights] and the "Best Tool for the
+Community" for [DDPy]. As if that wasn't enough, I was quite touched for also
+being awarded a "Community Spirit Prize". It was (and continues to be) an
+honour and pleasure serving the community!
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Got an honourable mention at <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> for &quot;Any Question Answered?&quot; our analysis of Parliamentary Questions Answered /w <a href="https://twitter.com/John_Sandall">@John_Sandall</a></p>&mdash; Florian Rathgeber (@frathgeber) <a href="https://twitter.com/frathgeber/status/668486316645081088">November 22, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Got another honourable mention at <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> for DDPy as a useful tool for the <a href="https://twitter.com/hashtag/hackathon?src=hash">#hackathon</a> community. So go &amp; use it! <a href="https://t.co/80K4puh9Wh">https://t.co/80K4puh9Wh</a></p>&mdash; Florian Rathgeber (@frathgeber) <a href="https://twitter.com/frathgeber/status/668486769495695360">November 22, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">No end of awards today it seems ;)&#10;Many thanks to <a href="https://twitter.com/RebelUncut">@RebelUncut</a> <a href="https://twitter.com/nickmhalliday">@nickmhalliday</a> and <a href="https://twitter.com/greentrac">@greentrac</a> for running <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> <a href="https://t.co/9hvSrkubyY">https://t.co/9hvSrkubyY</a></p>&mdash; Florian Rathgeber (@frathgeber) <a href="https://twitter.com/frathgeber/status/668487299320176640">November 22, 2015</a></blockquote>
+
 [Parliament Week]: https://parliamentweek.org
 [Accountability Hack]: http://accountabilityhack.org
 [Tracy Green]: https://twitter.com/greentrac
@@ -126,6 +152,7 @@ classifier for the entire corpus.
 [Department of Health]: https://www.gov.uk/government/organisations/department-of-health
 [Foreign & Commonwealth Office]: https://www.gov.uk/government/organisations/foreign-commonwealth-office
 [Nick Clegg]: https://twitter.com/nick_clegg
+[DDPy]: https://github.com/kynan/DDPy
 
 # Any Questions Answered?
 
@@ -134,7 +161,7 @@ classifier for the entire corpus.
 
 # DDPy - data.parliament.uk for Humans
 
-* [Code](https://github.com/kynan/DDPy)
+* [Code][DDPy]
 * [Documentation][documentation]
 * [Python Package][PyPI]
 
