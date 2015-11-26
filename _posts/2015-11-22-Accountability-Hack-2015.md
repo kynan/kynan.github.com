@@ -49,9 +49,9 @@ rendered preview of your creation until after you submitted.
 
 The overnight stay at the NAO was again quite comfortable and we could use a
 shower in the morning. My team from the Saturday did sadly not come back,
-however [John], a good friend and brilliant data scientist, arrived in time
-for breakfast. We discussed classifying answer quality with an N-gram analysis
-using a list of previously identified phrases commonly used to defer
+however [John Sandall], a good friend and brilliant data scientist, arrived in
+time for breakfast. We discussed classifying answer quality with an N-gram
+analysis using a list of previously identified phrases commonly used to defer
 questions. An alternative would be training a text analysis model on the
 entire text corpus based on a training set of manually classified answers.
 
@@ -128,6 +128,7 @@ honour and pleasure serving the community!
 [Parliament Week]: https://parliamentweek.org
 [Accountability Hack]: http://accountabilityhack.org
 [Tracy Green]: https://twitter.com/greentrac
+[Nick Halliday]: http://nickmhalliday.net
 [National Audit Office]: http://nao.org.uk
 [Terry Makewell]: https://twitter.com/TerryMakewell
 [Office for National Statistics]: http://ons.gov.uk
@@ -142,7 +143,7 @@ honour and pleasure serving the community!
 [Kevin]: http://lws.io
 [MLH !LIGHT]: http://no-light.mlh.io
 [bootstrap]: http://getbootstrap.com
-[John]: http://artofinference.com
+[John Sandall]: http://artofinference.com
 [PyScaffold]: https://pyscaffold.readthedocs.org
 [PyPI]: https://pypi.python.org/pypi/ddpuk
 [documentation]: https://ddpy.readthedocs.org
