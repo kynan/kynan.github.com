@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: twitter
 title: Reflections on the Accountability Hack 2015
 category: posts
 draft: true
@@ -13,7 +13,6 @@ Halliday] from the [National Audit Office] and [Terry Makewell] from the
 [RebelUncut] crew.
 
 <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Hack <a href="https://twitter.com/hashtag/Parliament?src=hash">#Parliament</a>&#39;s data and show us what you can do with it, sign up to <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> <a href="https://t.co/mcN02u4NbV">https://t.co/mcN02u4NbV</a></p>&mdash; UK Parliament (@UKParliament) <a href="https://twitter.com/UKParliament/status/665273451368873984">November 13, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Hackers and "armchair auditors" were invited to tackle four different
 challenges using a diverse set of [open data sources]:
@@ -23,6 +22,8 @@ challenges using a diverse set of [open data sources]:
 * **ONS**: Use the ONS OpenAPI to improve accountability.
 * **Wildcard**: Use any three open data sets to improve accountability.
 
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">And we&#39;re LIVE! <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> is go <a href="https://t.co/QHjV7QWOUd">pic.twitter.com/QHjV7QWOUd</a></p>&mdash; RebelUncut (@RebelUncut) <a href="https://twitter.com/RebelUncut/status/667991291893010432">November 21, 2015</a></blockquote>
+
 Many prospective participants were deterred by either the freezing cold or by
 issues with public transport, so not that many heard [Meg Hillier MP] give the
 introductory address. After that, ideas were thrown around and teams started
@@ -30,6 +31,8 @@ forming. I joined [Natalia], [Mina] and [Emma], a brilliant trio who were
 working on a visualisation of [Parliamentary Questions Answered] and were
 looking for some help with crunching the data and classifying the quality of
 answers.
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Wonderful to have <a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a> sharing her passion for holding &quot;people like me&quot; accountable <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> <a href="https://t.co/q98Q85HkPq">pic.twitter.com/q98Q85HkPq</a></p>&mdash; RebelUncut (@RebelUncut) <a href="https://twitter.com/RebelUncut/status/668010032991223808">November 21, 2015</a></blockquote>
 
 We first of all needed to pull all data from the Parliament's [Linked Data
 API] in JSON format. Downloading all 63000 questions in batches of 500 (which
@@ -53,6 +56,10 @@ using a list of previously identified phrases commonly used to defer
 questions. An alternative would be training a text analysis model on the
 entire text corpus based on a training set of manually classified answers.
 
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/emjan29">@emjan29</a> <a href="https://twitter.com/minaorangina">@minaorangina</a> <a href="https://twitter.com/NataliaLKB">@NataliaLKB</a> I’m working with <a href="https://twitter.com/frathgeber">@frathgeber</a> at <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> we have a big flat CSV of MPs Q&amp;A, you coming back for today?</p>&mdash; John Sandall (@John_Sandall) <a href="https://twitter.com/John_Sandall/status/668401018288349184">November 22, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I’m at Accountability Hack at the <a href="https://twitter.com/NAOorguk">@NAOorguk</a> today <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> using <a href="https://twitter.com/UKParliData">@ukparlidata</a> <a href="https://twitter.com/hashtag/data?src=hash">#data</a> to hold lawmakers to account! <a href="https://t.co/JKCQgzN33C">pic.twitter.com/JKCQgzN33C</a></p>&mdash; John Sandall (@John_Sandall) <a href="https://twitter.com/John_Sandall/status/668403230745980928">November 22, 2015</a></blockquote>
+
 Before getting to work on that we needed to transform the raw data into a
 suitable form and identify which attributes were relevant for our analysis.
 Halfway through doing that I realised the answer text was missing from the
@@ -61,11 +68,19 @@ data and found out it was due to passing a query parameter to the API
 data. By that point it was unrealistic to be able to rerun the entire download
 in time for show & tell.
 
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Need to pull all data from <a href="https://twitter.com/UKParliData">@UKParliData</a> again, because ?_view=all contrary to what you might think does *not* give you everything <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a></p>&mdash; Florian Rathgeber (@frathgeber) <a href="https://twitter.com/frathgeber/status/668432437370880000">November 22, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Full MPs answered questions <a href="https://twitter.com/hashtag/OpenData?src=hash">#OpenData</a> from <a href="https://twitter.com/UKParliData">@ukparlidata</a> as 62k row CSV (7MB compressed) -&gt; <a href="https://t.co/JmuqMdl3k9">https://t.co/JmuqMdl3k9</a> <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a></p>&mdash; John Sandall (@John_Sandall) <a href="https://twitter.com/John_Sandall/status/668408168356139009">November 22, 2015</a></blockquote>
+
 John did however still manage to run some statistical analysis on the data to
 answer many interesting questions. Meanwhile I turned my download script into
 a "proper" Python package using [PyScaffold], uploaded the package to [PyPI]
 and the [documentation] to [Read the Docs] - just in time for going up on
 stage!
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Here we go!! <a href="https://twitter.com/gabysslave">@gabysslave</a> kicking off <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a> show &amp; tell <a href="https://t.co/kkTCNOZ5jG">pic.twitter.com/kkTCNOZ5jG</a></p>&mdash; RebelUncut (@RebelUncut) <a href="https://twitter.com/RebelUncut/status/668447489339564033">November 22, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Sounds like we&#39;re going to get some robust feedback on <a href="https://twitter.com/UKParliData">@UKParliData</a> now... <a href="https://twitter.com/hashtag/acchack15?src=hash">#acchack15</a></p>&mdash; Dan Barrett (@dasbarrett) <a href="https://twitter.com/dasbarrett/status/668459325011177472">November 22, 2015</a></blockquote>
 
 Quite a few extra spectators came along to attend the show & tell with a
 rather impressive lineup of 16 projects! I was on stage twice: First to
@@ -77,6 +92,12 @@ longest and the Prime Minister referred the highest proportion of questions.
 With more time to build up a training set by categorising some questions
 manually e.g. for quality or difficulty, we could have trained a Bayes
 classifier for the entire corpus.
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/acchack15?src=hash">#acchack15</a> next up any questions answered... <a href="https://t.co/4KaEJHr64m">pic.twitter.com/4KaEJHr64m</a></p>&mdash; Ranjan Balakumaran (@financialeyes) <a href="https://twitter.com/financialeyes/status/668459577038520320">November 22, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Fun fact: <a href="https://twitter.com/nick_clegg">@nick_clegg</a> ranks higher than any other MP for how long it takes to get questions answered (49 days on avg) <a href="https://twitter.com/hashtag/PoorNick?src=hash">#PoorNick</a> <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a></p>&mdash; John Sandall (@John_Sandall) <a href="https://twitter.com/John_Sandall/status/668428101609775104">November 22, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;Have all these MPs always been so annoying?!&quot; <a href="https://twitter.com/John_Sandall">@John_Sandall</a> Love it <a href="https://twitter.com/hashtag/AccHack15?src=hash">#AccHack15</a></p>&mdash; RebelUncut (@RebelUncut) <a href="https://twitter.com/RebelUncut/status/668459719363833856">November 22, 2015</a></blockquote>
 
 [Parliament Week]: https://parliamentweek.org
 [Accountability Hack]: http://accountabilityhack.org
@@ -120,8 +141,3 @@ classifier for the entire corpus.
 # Other resources
 
 * [Accountability Hack 2015 hackpad](http://bit.ly/AccHackpad15)
-
-<a class="twitter-timeline" data-dnt="true"
-href="https://twitter.com/frathgeber/timelines/668551765114142721"
-data-widget-id="668931602173546497" data-width="100%">Accountability Hack 2015</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
