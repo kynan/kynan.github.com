@@ -137,3 +137,20 @@ Furthermore, a prototype implementation of computational steering for the {FEniC
 	keywords = {Abstraction, code generation, UFL},
 	pages = {24:1--24:27},
 }
+
+@article{bercea_structure-exploiting_2016,
+	title = {A structure-exploiting numbering algorithm for finite elements on extruded meshes, and its performance evaluation in {Firedrake}},
+	volume = {9},
+	issn = {1991-9603},
+	url = {http://www.geosci-model-dev.net/9/3803/2016/},
+	doi = {10.5194/gmd-9-3803-2016},
+	abstract = {We present a generic algorithm for numbering and then efficiently iterating over the data values attached to an extruded mesh. An extruded mesh is formed by replicating an existing mesh, assumed to be unstructured, to form layers of prismatic cells. Applications of extruded meshes include, but are not limited to, the representation of three-dimensional high aspect ratio domains employed by geophysical finite element simulations. These meshes are structured in the extruded direction. The algorithm presented here exploits this structure to avoid the performance penalty traditionally associated with unstructured meshes. We evaluate the implementation of this algorithm in the Firedrake finite element system on a range of low compute intensity operations which constitute worst cases for data layout performance exploration. The experiments show that having structure along the extruded direction enables the cost of the indirect data accesses to be amortized after 10–20 layers as long as the underlying mesh is well ordered. We characterize the resulting spatial and temporal reuse in a representative set of both continuous-Galerkin and discontinuous-Galerkin discretizations. On meshes with realistic numbers of layers the performance achieved is between 70 and 90 \% of a theoretical hardware-specific limit.},
+	number = {10},
+	urldate = {2016-12-31},
+	journal = {Geosci. Model Dev.},
+	author = {Bercea, G.-T. and McRae, A. T. T. and Ham, D. A. and Mitchell, L. and Rathgeber, F. and Nardi, L. and Luporini, F. and Kelly, P. H. J.},
+	month = oct,
+	year = {2016},
+	keywords = {firedrake},
+	pages = {3803--3815},
+}
