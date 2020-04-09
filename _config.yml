@@ -4,7 +4,7 @@ permalink:           blog/:year/:month/:day/:title
 # Setup
 title:               Not sorry for the inconvenience
 tagline:
-description:         Computational scientist at [ECMWF](http://ecmwf.int) in Reading, UK. Pythonista. Cyclist. Open source / open data enthusiast. Hobbyist photographer. [PyData London](http://london.pydata.org) co-organiser. [Taarifa](http://taarifa.org) co-Founder.
+description:         "[Site Reliability Engineer](https://landing.google.com/sre) at Google in London, UK. Former Computational Scientist at [ECMWF](http://ecmwf.int) in Reading, UK. PhD from [Imperial College](https://imperial.ac.uk). Pulic speaker. Feminist. Pythonista. Cyclist. Open source / open data enthusiast. Hobbyist photographer. [PyData London](https://london.pydata.org) co-founder."
 url:                 https://kynan.github.io
 domain:              kynan.github.io
 baseurl:             ''
