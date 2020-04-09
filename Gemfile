@@ -1,5 +1,3 @@
 source "https://rubygems.org"
-
-gem "jekyll-watch"
-gem "jekyll-sitemap"
-gem "rdiscount"
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-gist"
