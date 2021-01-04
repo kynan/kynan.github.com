@@ -6,6 +6,32 @@ title: Talks
 I frequently give tech talks at meetup groups and conferences. If you'd like me
 to speak at your event, please [reach out](https://twitter.com/frathgeber)!
 
+Talk Index
+==========
+
+   * [2020](#2020)
+      * [Fundamentals of Google Cloud: A Guided Tour](#fundamentals-of-google-cloud-a-guided-tour)
+      * [Google's Production Environment](#googles-production-environment)
+      * [How to SRE: Getting Started with Site Reliability Engineering](#how-to-sre-getting-started-with-site-reliability-engineering)
+   * [2019](#2019)
+      * [Build a (tech) community! A how to guide](#build-a-tech-community-a-how-to-guide)
+      * [How to SRE: Getting Started with Site Reliability Engineering](#how-to-sre-getting-started-with-site-reliability-engineering-1)
+   * [2016](#2016)
+      * [Approaches to I/O Scalability Challenges in the ECMWF Forecasting System](#approaches-to-io-scalability-challenges-in-the-ecmwf-forecasting-system)
+   * [2014](#2014)
+      * [Firedrake: a High-level, Portable Finite Element Computation Framework](#firedrake-a-high-level-portable-finite-element-computation-framework)
+      * [PyOP2: a performance-portable framework for parallel computations on unstructured meshes](#pyop2-a-performance-portable-framework-for-parallel-computations-on-unstructured-meshes)
+      * [Firedrake: Re-imagining FEniCS by Composing Domain-specific Abstractions](#firedrake-re-imagining-fenics-by-composing-domain-specific-abstractions)
+   * [2013](#2013)
+      * [Performance-Portable Finite-element Computations from High-level Specifications with FFC and PyOP2](#performance-portable-finite-element-computations-from-high-level-specifications-with-ffc-and-pyop2)
+      * [PyOP2: a Framework for Performance-Portable Unstructured Mesh-based Simulations and its Application to Finite-Element Computations](#pyop2-a-framework-for-performance-portable-unstructured-mesh-based-simulations-and-its-application-to-finite-element-computations)
+      * [Performance Portable Finite Element Computations in Fluidity with UFL, FFC and PyOP2](#performance-portable-finite-element-computations-in-fluidity-with-ufl-ffc-and-pyop2)
+   * [2012](#2012)
+      * [PyOP2: A High-Level Framework for Performance-Portable Simulations on Unstructured Meshes](#pyop2-a-high-level-framework-for-performance-portable-simulations-on-unstructured-meshes)
+      * [Automatically Generating Performance-portable Finite Element Solvers for Manycore Architectures](#automatically-generating-performance-portable-finite-element-solvers-for-manycore-architectures)
+   * [2010](#2010)
+      * [Automated Finite Element computations in the FEniCS framework using GPUs](#automated-finite-element-computations-in-the-fenics-framework-using-gpus)
+
 # 2020
 
 ## Fundamentals of Google Cloud: A Guided Tour
