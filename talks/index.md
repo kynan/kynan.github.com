@@ -29,3 +29,51 @@ to speak at your event, please [reach out](https://twitter.com/frathgeber)!
 ## How to SRE: Getting Started with Site Reliability Engineering
 2019-11-28, [Site Reliability Engineering London](https://www.meetup.com/London-SRE-Group/events/265398217/), London, UK
 <script async class="speakerdeck-embed" data-id="5900e9fecc974b87afdddb55a7c7e4e5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+# 2016
+
+## Approaches to I/O Scalability Challenges in the ECMWF Forecasting System
+2016-06-09, [PASC16](https://pasc16.pasc-conference.org/program/program/), Lausanne, Switzerland
+
+# 2014
+
+## Firedrake: a High-level, Portable Finite Element Computation Framework
+2014-08-30, [EuroScipy 2014](https://www.euroscipy.org/2014/schedule/presentation/15/), Cambridge, UK
+<iframe src="https://kynan.github.io/EuroSciPy2014" frameborder="0" width="720" height="480"></iframe>
+
+## PyOP2: a performance-portable framework for parallel computations on unstructured meshes
+2014-07-14, [PDESoft 2014](http://pdesoft.uni-hd.de/), Heidelberg, Germany
+<iframe src="https://kynan.github.io/pdesoft2014" frameborder="0" width="720" height="480"></iframe>
+
+## Firedrake: Re-imagining FEniCS by Composing Domain-specific Abstractions
+2014-06-16, FEniCS'14, Paris, France
+<iframe src="https://kynan.github.io/fenics14" frameborder="0" width="720" height="480"></iframe>
+
+# 2013
+
+## Performance-Portable Finite-element Computations from High-level Specifications with FFC and PyOP2
+2013-07-05, [17th Workshop on Compilers for Parallel Computing](http://labexcompilation.ens-lyon.fr/cpc2013/), Lyon, France
+<iframe src="https://kynan.github.io/CPC2013" frameborder="0" width="720" height="480"></iframe>
+
+## PyOP2: a Framework for Performance-Portable Unstructured Mesh-based Simulations and its Application to Finite-Element Computations
+2013-06-27, [SciPy 2013](http://conference.scipy.org/scipy2013/), Austin, Texas, USA
+<iframe src="https://kynan.github.io/SciPy2013" frameborder="0" width="720" height="480"></iframe>
+
+## Performance Portable Finite Element Computations in Fluidity with UFL, FFC and PyOP2
+2013-03-18, FEniCS'13, Cambridge, UK
+<iframe src="https://kynan.github.io/fenics13" frameborder="0" width="720" height="480"></iframe>
+
+# 2012
+
+## PyOP2: A High-Level Framework for Performance-Portable Simulations on Unstructured Meshes
+2012-11-16, [Second International Workshop on Domain-Specific Languages and High-Level Frameworks for High Performance Computing (WOLFHPC)](https://hpc.pnl.gov//conf/wolfhpc/2012/), Salt Lake City, Utah, USA
+<iframe src="https://kynan.github.io/wolfhpc2012" frameborder="0" width="720" height="480"></iframe>
+
+## Automatically Generating Performance-portable Finite Element Solvers for Manycore Architectures
+2012-09-21, Facing the Multicore-Challenge III, Stuttgart, Germany
+<iframe src="https://kynan.github.io/multicore-challenge-iii" frameborder="0" width="720" height="480"></iframe>
+
+# 2010
+
+## Automated Finite Element computations in the FEniCS framework using GPUs
+2010-12-13, 2nd UK GPU Computing Conference, Cambridge, UK
