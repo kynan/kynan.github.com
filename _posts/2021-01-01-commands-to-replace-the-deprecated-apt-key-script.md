@@ -8,6 +8,11 @@ category: posts
 however there is no replacement available, neither does the `man` page document
 how to replace the commands `apt-key` provides. Here is my attempt.
 
+**Note:** `gpg` will by default create new keyrings in the (new) "GPG keybox
+database version 1", whereas `apt` expects them in the (legacy) "PGP/GPG key
+public ring (v4)" format. Specify the prefix `gnupg-ring:` for the keyring file
+to make `gpg` use the legacy v4 format.
+
 ## apt-key list
 
 This commands lists all keys stored in `/etc/apt/trusted.gpg` and any `.gpg` or
@@ -39,7 +44,7 @@ done
 Once you've identified the keyring and key ID, download the new key:
 
 ```shell
-sudo gpg --recv-keys --no-default-keyring --keyring /etc/apt/trusted.gpg.d/<FILENAME>.gpg --keyserver keys.gnupg.net <KEY_ID>
+sudo gpg --recv-keys --no-default-keyring --keyring=gnupg-ring:/etc/apt/trusted.gpg.d/<FILENAME>.gpg --keyserver keys.gnupg.net <KEY_ID>
 ```
 
 ### Downloading a new key
@@ -51,5 +56,5 @@ database version 1" format, which is incompatible with `apt-key`.
 Choose a suitable filename for the new keyring and download the key:
 
 ```shell
-sudo gpg --recv-keys --no-default-keyring --keyring /etc/apt/trusted.gpg.d/<FILENAME>.kbx --keyserver keys.gnupg.net <KEY_ID>
+sudo gpg --recv-keys --no-default-keyring --keyring=gnupg-ring:/etc/apt/trusted.gpg.d/<FILENAME>.kbx --keyserver keys.gnupg.net <KEY_ID>
 ```
