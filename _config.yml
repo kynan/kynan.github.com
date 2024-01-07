@@ -27,3 +27,7 @@ disqus_shortname: frathgeber
 
 # Analytics
 analytics_id: UA-42283836-1
+
+# Plugins
+plugins:
+  - jekyll-sitemap
