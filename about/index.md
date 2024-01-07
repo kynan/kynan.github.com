@@ -14,8 +14,8 @@ domain-specific languages (eDSLs) in Python to describe scientific problems at
 a high level and with high expressivity. Furthermore I have some hobbyist
 experience in full stack web application development.
 
-Currently I work as a [Site Reliability Engineer](https://landing.google.com/sre)
-for Google in London, UK. My work has a particular focus on Service Level
+Currently I work as a [Site Reliability Engineer](https://sre.google) for
+Google in Zürich, Switzerland. My work has a particular focus on Service Level
 Objectives (SLOs), reliability and performance for user facing services in
 Google Cloud.
 
